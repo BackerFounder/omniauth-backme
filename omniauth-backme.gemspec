@@ -6,8 +6,8 @@ require 'omniauth/backme/version'
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-backme"
   spec.version       = Omniauth::Backme::VERSION
-  spec.authors       = ["ronald.hsu"]
-  spec.email         = ["hothero0705@gmail.com"]
+  spec.authors       = ["hothero", "Backer-Founder"]
+  spec.email         = ["hothero0705@gmail.com", "hello@backer-founder.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_runtime_dependency "omniauth-oauth2"
 end
