@@ -7,16 +7,34 @@ TODO: Write a gem description
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'omniauth-backme'
+gem "omniauth-backme", git: "git@github.com:BackerFounder/omniauth-backme.git"
 ```
 
 And then execute:
 
     $ bundle
+    
+## Configuration
 
-Or install it yourself as:
+```
+# config/initializers/devise.rb
+Devise.setup do |config|
+  config.omniauth :backme, Rails.application.secrets.backme_key, Rails.application.secrets.backme_secret
+end
+```
+or
 
-    $ gem install omniauth-backme
+```
+# config/initializers/devise.rb
+Devise.setup do |config|
+  config.omniauth :backme, ENV["BACKME_KEY"], ENV["BACKME_SECRET"]
+end
+```
+
+```
+# app/models/user.rb
+omniauth_providers: [:facebook, :google_oauth2, :weibo, :backme]
+```
 
 ## Usage
 
