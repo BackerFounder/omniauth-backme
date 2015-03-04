@@ -8,7 +8,7 @@ module OmniAuth
       # This is where you pass the options you would pass when
       # initializing your consumer from the OAuth gem.
       option :client_options, {
-        :site =>  "http://graph.backme.dev:3000"
+        :site =>  "https://backme.herokuapp.com"
       }
  
       # Disable state-based CSRF protection
