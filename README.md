@@ -1,3 +1,8 @@
+gemfile
+configuration: controller, model, initializer
+registration needed?
+confirmable?
+
 # Omniauth::Backme
 
 TODO: Write a gem description

@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Omniauth::Backme::VERSION
   spec.authors       = ["hothero", "Backer-Founder"]
   spec.email         = ["hothero0705@gmail.com", "hello@backer-founder.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = 'Backme OAuth2 Strategy for OmniAuth'
+  spec.description   = "https://github.com/BackerFounder/omniauth-backme"
   spec.homepage      = ""
   spec.license       = "MIT"
 
